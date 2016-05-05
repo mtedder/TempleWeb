@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<!-- Ref: http://www.sanwebe.com/2014/08/css-html-forms-designs -->
+<head>
+<meta charset="ISO-8859-1">
+<title>Temple Registration</title>
+<link rel="stylesheet" href="css/formstyle1.css" type="text/css">
+</head>
+<body>
+	<div class="form-style-10">
+		<h1>
+			Welcome to Bharatiya Temple Library!<span>Member Check-In</span>
+		</h1>
+		<form action="TempleServlet" method="GET">
+			<div class="section">
+				<span>1</span>Phone Number Or Name
+			</div>
+			<div class="inner-wrap">
+				<label>Your Full Name <input type="text" name="fullname" /></label>
+				<label>Phone Number <input type="text" name="phonenumber" /></label>				
+			</div>
+
+			<div class="button-section">
+				<input type="submit" name="Submit" />
+			</div>
+		</form>
+<hr>
+		<form action="TempleServlet" method="POST">
+			<div class="section">
+				<span>2</span>New Visitor
+			</div>
+			<div class="inner-wrap">
+				<label>First Name <input type="text" name="fisrtname" /></label> <label>Last
+					Name <input type="text" name="lastname" />
+				</label> 
+				<label>Address <input type="text" name="address" /></label>
+				<label>City <input type="text" name="city" /></label>
+				<label>State <input type="text" name="state" /></label>
+				<label>Zip <input type="text" name="zip" /></label>
+				 <label>Phone Number <input type="text" name="phonenumber" /></label>
+				<label>Member?
+				<select name="membership">
+						<option value="true">Yes</option>
+						<option value="false">No</option>
+				</select></label>
+			</div>
+			<div class="button-section">
+				<input type="submit" name="Submit" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
