@@ -211,7 +211,7 @@ public class TempleDao {
 			 Class.forName("com.mysql.jdbc.Driver");
 //			 Connection c;
 			 String connectionString = "jdbc:mysql://localhost:3306";			 
-			 return DriverManager.getConnection(connectionString, "root","admin");
+			 return DriverManager.getConnection(connectionString, "xxxx","xxxx");
 
 //			Context ctx = new InitialContext();
 //			DataSource ds = (DataSource) ctx.lookup("java:comp/env/jdbc/dbb");
